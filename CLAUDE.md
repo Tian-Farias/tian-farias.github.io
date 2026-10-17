@@ -14,6 +14,9 @@ Blog/portafolio en Jekyll con el tema [Chirpy](https://github.com/cotes2020/jeky
 - `_data/`: `authors.yml`, `contact.yml`, `share.yml`.
 - `assets/img/`: imágenes. Avatar: `cristian.jpg`. Favicons en `assets/img/favicons/`.
 - `_plugins/`: hook de `lastmod` del tema.
+- Archivos del tema sobrescritos (copiados desde la gema Chirpy 7.x; revisarlos al actualizar el tema):
+  - `_data/locales/es-ES.yml`: licencia CC BY-SA 4.0 y texto del pie ("Copyleft, casi todos los derechos reservados.").
+  - `_includes/footer.html`: agrega "y Claudito" después del nombre en el ©.
 - `.github/workflows/pages-deploy.yml`: build (Ruby 3.3) + `htmlproofer` + deploy en cada push a `main`.
 
 ## Ejecutar en local
@@ -42,6 +45,8 @@ Jekyll no recarga `_config.yml`: reiniciar el servidor al cambiarlo.
 - Favicons: se generan desde `assets/img/cristian.jpg` (recorte cuadrado de la cara). Regenerar los 7 archivos con los mismos nombres si cambia la foto.
 
 ## Contenido y privacidad
+
+- Licencias: posts bajo CC BY-SA 4.0; código del sitio bajo MIT (`LICENSE`).
 
 - Fuente del perfil: el LinkedIn de Cristian (https://www.linkedin.com/in/cristianfarias). No inventar logros, cifras ni fechas; si falta información, preguntar.
 - **No publicar el teléfono.** El correo público es el que está en `_config.yml`.

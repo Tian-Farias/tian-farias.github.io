@@ -13,4 +13,5 @@ $ bundle exec jekyll s
 
 ## Licencia
 
-[MIT](LICENSE)
+- Contenido de los posts: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es).
+- Código del sitio: [MIT](LICENSE).
