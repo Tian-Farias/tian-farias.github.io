@@ -5,9 +5,7 @@ order: 1
 title: Sobre Mí
 ---
 
-**Líder de IA e Innovación** | Arquitectura de agentes LLM, MCP y Spec-Driven Development | Adeptus Mechanicus
-
-¡Hola! Soy Cristian Farias (Tian), sacerdote del Adeptus Mechanicus en horario no laboral: la carne es débil, pero los pipelines son eternos. El humor negro es parte de la firma.
+¡Hola! Soy Cristian Farias (Tian), sacerdote del Adeptus Mechanicus en horario no laboral: la carne es débil, pero los pipelines son eternos.
 
 Llevo más de 20 años construyendo tecnología. Empecé en infraestructura y Linux, que uso desde 1995. Seguí con ingeniería de datos y MLOps: diseñé un data lake en AWS y participé en su migración a Snowflake.
 

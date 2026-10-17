@@ -16,7 +16,7 @@ timezone: America/Santiago
 
 title: Tian Farias # the main title
 
-tagline: Agentes LLM, MCP, datos e IA aplicada. # it will display as the sub-title
+tagline: IA e Innovación | Agentes LLM, MCP | Spec-Driven Development | Adeptus Mechanicus
 
 description: >- # used by seo meta and the atom feed
   Blog personal de Cristian "Tian" Farias, líder de IA e Innovación con más de 20 años construyendo infraestructura, datos e IA. Notas sobre agentes LLM, MCP, datos y automatización.
@@ -59,7 +59,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: G-4E06QJJL88 # fill in your Google Analytics ID
+    id: # fill in your Google Analytics ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
@@ -96,7 +96,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/cristian.jpeg
+avatar: /assets/img/cristian.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
