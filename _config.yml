@@ -38,11 +38,9 @@ social:
   email: cristian.farias@protonmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/The_Fariax_c137 # change to your twitter homepage
-    - https://github.com/tian-farias # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
     - https://www.linkedin.com/in/cristianfarias
+    - https://github.com/tian-farias
+    - https://twitter.com/The_Fariax_c137
 
 # Site Verification Settings
 webmaster_verifications:
