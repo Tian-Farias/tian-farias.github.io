@@ -1,0 +1,7 @@
+# Proyectos que se muestran en el panel derecho (ver _includes/projects.html).
+# Campos: name, url, repo (opcional), description (opcional, corta).
+
+- name: Atlas 3D del Cerebro
+  url: https://tian-farias.github.io/Cerebro3D/
+  repo: https://github.com/Tian-Farias/Cerebro3D
+  description: Atlas 3D interactivo del encéfalo humano para estudiantes de Psicología.

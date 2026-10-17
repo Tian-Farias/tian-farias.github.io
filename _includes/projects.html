@@ -1,0 +1,23 @@
+<!-- Projects list for the right panel, from _data/projects.yml -->
+
+{% if site.data.projects.size > 0 %}
+  <section id="access-projects">
+    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.projects | default: 'Proyectos' -}}</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      {% for project in site.data.projects %}
+        <li class="lh-lg">
+          <a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a>
+          {% if project.repo %}
+            <a href="{{ project.repo }}" target="_blank" rel="noopener" aria-label="Código de {{ project.name }}">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          {% endif %}
+          {% if project.description %}
+            <div class="small lh-sm mb-2">{{ project.description }}</div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <!-- #access-projects -->
+{% endif %}
