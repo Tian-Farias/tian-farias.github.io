@@ -5,25 +5,26 @@ order: 1
 title: Sobre Mí
 ---
 
-¡Hola! Soy Cristian Farias, un apasionado de la tecnología con más de 20 años de experiencia en el mundo de TI. Desde siempre, he sentido una fascinación por cómo la tecnología puede transformar nuestras vidas y hacer las cosas más fáciles. Hoy me dedico a aplicar soluciones tecnológicas avanzadas, y en este blog comparto notas y aprendizajes sobre datos, automatización e inteligencia artificial.
+**Líder de IA e Innovación** | Arquitectura de agentes LLM, MCP y Spec-Driven Development
 
-## ¿Quién soy?
-Soy un ingeniero especializado en DataOps y MLops, con un enfoque en inteligencia artificial y automatización. Mi carrera ha sido una emocionante aventura, desde trabajar en proyectos de inteligencia artificial generativa hasta implementar sistemas de automatización que facilitan la vida de las personas y las empresas.
+¡Hola! Soy Cristian Farias (Tian). Llevo más de 20 años construyendo tecnología. Empecé en infraestructura y Linux, que uso desde 1995. Seguí con ingeniería de datos y MLOps: diseñé un data lake en AWS y participé en su migración a Snowflake.
 
-## ¿Qué hago?
-Me encanta crear herramientas y soluciones que realmente marcan la diferencia. Ya sea desarrollando interfaces de voz para modelos de lenguaje o implementando sistemas de monitoreo industrial, mi objetivo es siempre el mismo: aprovechar la tecnología para resolver problemas reales de manera eficiente y práctica.
+## ¿Qué hago hoy?
+Lidero el área de IA e Innovación de SmartJob, miembro de la Claude Partner Network de Anthropic. Mi equipo diseña y pone en producción sistemas de agentes LLM:
 
-## ¿Por qué lo hago?
-Creo firmemente en el poder de la tecnología para mejorar nuestro día a día. No se trata solo de hacer cosas nuevas, sino de hacerlas mejor. Mi misión es tomar lo complejo y hacerlo accesible, simplificando procesos y brindando soluciones útiles a través de la innovación.
+- Una plataforma y metodología que cubre desde la preventa hasta el desarrollo con agentes y el QA automatizado.
+- Un gateway LLM para toda la empresa.
+- Servidores MCP e integración con Claude Code.
 
-## Un Poco Más Sobre Mí
-**Certificaciones**: Cuento con certificaciones de instituciones prestigiosas como MIT xPro y Google Cloud, lo que respalda mi compromiso con el aprendizaje continuo y la excelencia.
+Mi rol cruza arquitectura, código, seguridad y operación. Nos interesa que la IA entregue resultados verificables en procesos reales.
 
-**Proyectos Personales**: En mi tiempo libre, me gusta desarrollar proyectos que integren IA y automatización, desde sistemas de prevención de fallos en maquinaria industrial hasta interfaces de voz avanzadas.
+## Preventa y emprendimiento
+Hago preventa técnica desde 2014: entiendo el problema del cliente, diseño la solución y estimo lo que realmente cuesta construirla. Fundé dos emprendimientos: CapData (mantenimiento predictivo industrial con IA) y FM Solar (energía para comunidades aisladas).
 
-**Valores**: Innovación, eficiencia y calidad son los pilares de mi trabajo. Me esfuerzo por crear soluciones que no solo funcionen, sino que también inspiren.
+## Aprendizaje continuo
+Soy autodidacta. Todo lo que sé lo aprendí trabajando, construyendo y estudiando por mi cuenta, y sigo haciéndolo, por ejemplo con mis certificaciones recientes de Anthropic en Claude API, MCP y Agent Skills. También cuento con certificaciones de MIT xPro y Google Cloud.
 
-## Conéctate Conmigo
-Si compartes mi pasión por la tecnología y la innovación, o si simplemente tienes curiosidad por saber más sobre lo que hago, ¡no dudes en ponerte en contacto! Estoy siempre abierto a nuevas ideas, colaboraciones y, por supuesto, a ayudar en lo que pueda.
+Mi laboratorio actual son LLMs conectados a hardware físico.
 
-**¡Gracias por visitar mi página y por tu interés en mi trabajo!**
+## Conversemos
+Estoy abierto a conversar sobre proyectos y desafíos de IA aplicada. Puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/cristianfarias) o [GitHub](https://github.com/tian-farias).

@@ -16,10 +16,10 @@ timezone: America/Santiago
 
 title: Tian Farias # the main title
 
-tagline: DataOps, MLOps e inteligencia artificial. # it will display as the sub-title
+tagline: Agentes LLM, MCP, datos e IA aplicada. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Blog personal de Cristian "Tian" Farias, ingeniero DataOps/MLOps con más de 20 años de experiencia en TI. Notas sobre datos, automatización e inteligencia artificial.
+  Blog personal de Cristian "Tian" Farias, líder de IA e Innovación con más de 20 años construyendo infraestructura, datos e IA. Notas sobre agentes LLM, MCP, datos y automatización.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
