@@ -5,16 +5,7 @@ order: 1
 title: Sobre Mí
 ---
 
-¡Hola! Soy Cristian Farias, un apasionado de la tecnología con más de 20 años de experiencia en el mundo de TI. Desde siempre, he sentido una fascinación por cómo la tecnología puede transformar nuestras vidas y hacer las cosas más fáciles. Hoy, me dedico a mirar hacia el futuro aplicando soluciones tecnológicas avanzadas.
-
-## iO-Labs: Compartiendo Conocimiento e Innovación
-Bienvenidos a iO-Labs, mi proyecto dedicado a compartir conocimientos y fomentar la innovación en la era digital. Entiendo que la transformación hacia la industria 4.0 implica mucho más que adoptar nuevas tecnologías; se trata de entenderlas y aplicarlas de manera efectiva.
-
-Me apasiona proporcionar información precisa y análisis detallados que impulsen la eficiencia y la innovación. Cada proyecto y artículo que comparto está basado en mi experiencia en el campo y orientado a ofrecer conocimiento práctico y aplicable.
-
-En iO-Labs, creo que cada dato cuenta y cada análisis tiene un propósito. Mi objetivo es ayudar a prosperar en un mundo digital en constante cambio. Me dedico a ofrecer soluciones y conocimientos avanzados que realmente marcan la diferencia.
-
-En iO-Labs, no solo construyo tecnología; construyo el futuro. Bienvenido a un espacio donde la tecnología y el conocimiento se unen para transformar el día a día.
+¡Hola! Soy Cristian Farias, un apasionado de la tecnología con más de 20 años de experiencia en el mundo de TI. Desde siempre, he sentido una fascinación por cómo la tecnología puede transformar nuestras vidas y hacer las cosas más fáciles. Hoy me dedico a aplicar soluciones tecnológicas avanzadas, y en este blog comparto notas y aprendizajes sobre datos, automatización e inteligencia artificial.
 
 ## ¿Quién soy?
 Soy un ingeniero especializado en DataOps y MLops, con un enfoque en inteligencia artificial y automatización. Mi carrera ha sido una emocionante aventura, desde trabajar en proyectos de inteligencia artificial generativa hasta implementar sistemas de automatización que facilitan la vida de las personas y las empresas.

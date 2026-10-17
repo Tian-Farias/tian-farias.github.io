@@ -4,7 +4,7 @@ author: Cristian
 categories: [Datos]
 tags: [Notas, Datos]
 toc: true
-coments: true
+comments: true
 image:
   path: /assets/img/ciencia-de-datos-image.png
   lqip: /assets/img/ciencia-de-datos-image.png
@@ -21,7 +21,7 @@ Es una continuación de campos como la [estadística](https://es.wikipedia.org/w
 
 Doy esta definición tratando de mantenerla libre de metodologías, técnicas y herramientas que se necesitan para lograrlo.
 
-Finalmente, [como les mencione en el post anterior ¿que es un dato?](https://fariax.github.io/data-analysis/notas-que-es-un-dato/#que-es-un-dato), un dato por si solo no constituye información, es a través de del procesamiento y análisis que se obtiene información.
+Finalmente, [como les mencione en el post anterior ¿que es un dato?](/posts/que-es-un-dato/#que-es-un-dato), un dato por si solo no constituye información, es a través de del procesamiento y análisis que se obtiene información.
 
 # ¿Información valiosa?
 
