@@ -42,7 +42,8 @@ Jekyll no recarga `_config.yml`: reiniciar el servidor al cambiarlo.
 - `Gemfile.lock` está en `.gitignore`.
 - No usar `.nojekyll`: el sitio se compila con Actions.
 - Enlaces internos de posts: usar rutas relativas (`/posts/titulo/`), no el dominio.
-- Favicons: se generan desde `assets/img/cristian.jpg` (recorte cuadrado de la cara). Regenerar los 7 archivos con los mismos nombres si cambia la foto.
+- Favicons: se generan desde `assets/img/cristian.jpg` (recorte cuadrado de la cara) con los nombres que espera Chirpy 7.6: `favicon.ico`, `favicon.svg`, `favicon-96x96.png`, `apple-touch-icon.png`, `web-app-manifest-192x192.png` y `web-app-manifest-512x512.png`. Si falta alguno, el sitio muestra el ícono de Chirpy que trae la gema.
+- RSS: Chirpy genera `/feed.xml` (Atom) y el ícono de RSS de la barra lateral viene de `_data/contact.yml`.
 
 ## Contenido y privacidad
 
