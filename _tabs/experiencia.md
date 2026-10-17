@@ -4,63 +4,92 @@ icon: fas fa-briefcase
 order: 2
 title: Experiencia
 ---
-## Proyectos Destacados
-- **Interacción con Modelos de Lenguaje:** Desarrollo de interfaces y sistemas integrados con OpenAI, Claude, Llama y AWS Bedrock.
-- **Interfaz de Voz para Modelos de Lenguaje:** Implementación de detección de voz y memoria para conversaciones fluidas.
-- **Soluciones de Machine Learning e IoT:** Automatización, monitoreo y análisis de imágenes para control de calidad en materiales.
-
 ## Historia
-### Transbank
-**Cargo:** Ingeniero DataOps/Arquitecto de Datos  
-**Período:** Mayo 2023 – Actualidad  
-- Implementación de arquitecturas y tecnologías de IA generativa.
-- Liderazgo del equipo de DataOps, diseñando soluciones robustas y promoviendo la automatización.
-- Enfoque en seguridad y cumplimiento PCI DSS, asegurando flujos de datos seguros y automatizados.
+
+### SmartJob
+**Cargo:** Líder de IA e Innovación  
+**Período:** Febrero 2025 – Actualidad  
+Lidero el área de IA e Innovación y su equipo: preventa de soluciones con IA, plataforma interna de agentes, infraestructura LLM y formación de la empresa.
+
+- **SmartForge:** plataforma y metodología de delivery de software con agentes de IA, en producción con clientes reales. Lideré su diseño y arquitectura.
+  - *Preventa:* a partir de un requerimiento o RFP genera el análisis funcional, las épicas, la arquitectura y la propuesta técnica, con aprobación humana en cada fase. 9 agentes en Python, trazabilidad RF → Épica → Decisión de arquitectura, criterios EARS, decisiones estilo ADR y un validador determinista de cobertura.
+  - *Desarrollo:* las especificaciones aprobadas pasan a GitHub Spec Kit y el desarrollo lo ejecutan agentes con Claude Code, supervisados por un líder técnico.
+  - *QA:* los casos de prueba se definen desde la especificación y se validan de forma automatizada al cierre.
+  - *Contexto:* motor de contexto con servidor MCP y SSO con Microsoft Entra ID.
+- **Antonia:** gateway LLM self-hosted (LiteLLM sobre GCP) que da acceso a modelos Claude vía Vertex AI a unas 57 personas. Gestiona keys, presupuestos y límites por equipo. La seguridad combina Cloudflare WAF, rate limiting, Caddy, un firewall restringido y autenticación IAM.
+- Lideré el programa de certificación Claude Certified Architect – Foundations para más de 57 personas de SmartJob: diagnóstico de 100 preguntas con corrección de sesgos, acceso a la API y guías de onboarding.
+- Diseñamos y estimamos soluciones de IA para clientes enterprise de retail y previsión.
+- Definimos el estándar interno de ingeniería de IA (v1.1): arquitectura de agentes, gobierno de prompts y cumplimiento de la Ley 21.719.
+- Automatizamos procesos con n8n (SharePoint/Graph API, RR.HH.) y pipelines de revisión de cumplimiento en GitHub Actions con Claude Code.
+
+### Transbank S.A.
+**Cargo:** Ingeniero DataOps/MLOps  
+**Período:** Mayo 2023 – Enero 2024  
+- Me incorporé a Transbank después de trabajar ahí como consultor de Zenta Group.
+- Lideré el equipo de DataOps/MLOps del área de datos y la continuidad operativa de la plataforma de datos.
+- Participé en la migración del data lake de AWS a Snowflake y en la implementación de IA generativa.
+- Impulsé la automatización y el autoservicio para otros equipos.
 
 ### Zenta Group
-**Cargo:** DataOps/Machine Learning Leader  
+**Cargo:** DataOps Senior  
 **Período:** Octubre 2020 – Mayo 2023  
-- Implementación de un datalake en AWS con una arquitectura orientada a eventos.
-- Automatización de flujos de datos y gestión de pipelines en plataformas serverless.
-- Desarrollo de métricas de rendimiento y apoyo en tareas de arquitectura en AWS.
+- Trabajé como consultor asignado a Transbank.
+- Participé en el diseño y la implementación del data lake corporativo en AWS.
 
 ### CapData
 **Cargo:** Co-Fundador  
 **Período:** Enero 2019 – Septiembre 2020  
-- Desarrollo de sistemas de prevención de fallas en maquinaria industrial utilizando machine learning.
-- Detección de anomalías en la fabricación de paneles de madera mediante visión artificial.
+- Cofundé una startup de mantenimiento predictivo que anticipaba fallas en maquinaria industrial con IA.
 
-### Megaarchivos/HQB S.A.
+### HQB S.A.
 **Cargo:** Jefe de Infraestructura  
 **Período:** Septiembre 2016 – Septiembre 2020  
-- Gestión de infraestructura TI, asegurando la continuidad operativa de sistemas, hardware y comunicaciones.
+- A cargo del departamento de infraestructura TI y de la continuidad operativa de sistemas, hardware, comunicaciones y aplicaciones del negocio.
 
 ### Desafiolatam
-**Cargo:** Profesor de Big Data y Data Science  
+**Cargo:** Ayudante de carrera Data Science  
 **Período:** Octubre 2018 – Mayo 2020  
-- Impartición de cursos de Big Data y Data Science en plataformas EMR de AWS.
-- Apoyo en módulos de programación, machine learning y proyectos de Data Science.
+- Ayudante en la carrera de Data Science de las becas Capital Humano de Corfo: Python, Machine Learning, SQL y Big Data.
 
-### DGSI/PuntoAlto
-**Cargo:** Jefe de Servicios  
+### FM Solar
+**Cargo:** Director ejecutivo  
+**Período:** Enero 2014 – Marzo 2018  
+- Diseñé e instalé sistemas fotovoltaicos y termosolares que llevaron energía eléctrica a familias y negocios aislados.
+
+### DGSI
+**Cargo:** Presales Architect  
 **Período:** Febrero 2014 – Agosto 2015  
-- Gestión de recursos, propuestas técnicas y comerciales.
-- Implementación de soluciones informáticas.
+- Levanté requerimientos, diseñé soluciones y arquitecturas, estimé recursos y escribí propuestas técnicas y comerciales.
+
+### Teck Consultores
+**Cargo:** Ingeniero de Proyectos  
+**Período:** Septiembre 2013 – Febrero 2014  
+- Gestión de proyectos, diseño e implementación de soluciones informáticas orientadas a la integración de sistemas virtuales con VMware.
 
 ### Advisor IT Ltda
 **Cargo:** Consultor Senior  
 **Período:** Enero 2013 – Septiembre 2013  
 - Gestión de proyectos y consultoría de infraestructura.
 
-### Finning South América
+### Independiente
+**Cargo:** Consultoría y Soporte  
+**Período:** Octubre 2012 – 2013  
+- Consultoría independiente, soporte en virtualización e implementación de soluciones GNU/Linux y Open Source.
+
+### Finning South America
 **Cargo:** Jefe de Comunicaciones y Telefonía  
 **Período:** Enero 2011 – Mayo 2012  
-- Administración de una red de comunicaciones con 90 sucursales en Chile, Argentina, Uruguay y Bolivia.
+- Administré la red de comunicaciones de 90 sucursales en Chile, Argentina, Uruguay y Bolivia, con más de 100 enlaces de datos.
+
+### ITBROKER
+**Cargo:** Ingeniero de Soporte en Virtualización  
+**Período:** Septiembre 2010 – Diciembre 2010  
+- Diseño e implementación de plataformas virtuales con VMware y Microsoft Hyper-V, virtualización de servicios y servidores, y capacitación en VMware vSphere 4.0 y 4.1.
 
 ### Global Integration Consulting S.A.
 **Cargo:** Consultor Senior  
 **Período:** Agosto 2006 – Agosto 2010  
-- Consultoría y desarrollo de soluciones tecnológicas.
+- Consultor Senior en el área de Infraestructura, Consultoría y Desarrollo.
 
 ### Five Solution Ltda.
 **Cargo:** Fundador  
@@ -68,11 +97,22 @@ title: Experiencia
 - Soluciones informáticas bajo plataforma Linux, diseño, montaje y administración de redes, desarrollo de aplicaciones.
 
 ### ACT S.A.
-**Cargo:** Ingeniero de Soporte Técnico  
+**Cargo:** Ingeniero de Soporte  
 **Período:** Octubre 2002 – Julio 2004  
-- Soporte en plataformas Linux y sistemas de respaldo, administración de red.
+- Soporte técnico en plataformas Linux y sistemas de respaldo, administración de red.
 
 ### Instituto Profesional DUOC-UC
 **Cargo:** Ayudante Académico  
 **Período:** 1998 – 2002  
 - Ayudantías en programación y administración de salas de recursos para la carrera Ingeniería en Conectividad y Redes.
+
+## Certificaciones
+- Anthropic: Claude API, MCP y Agent Skills (Introduction to agent skills)
+- Analista Data Science con Python
+- CompTIA Security+ (SY0-601) Cert Prep: 2 Secure Code Design and Implementation
+- Secure Coding in Java
+- VMware Certified Professional 5 – Data Center Virtualization
+- MIT xPro y Google Cloud
+
+## Aptitudes
+LiteLLM · n8n · Microsoft Entra ID · Claude Code · MCP · AWS · Snowflake · GCP
