@@ -12,9 +12,9 @@
     <time>{{ 'now' | date: '%Y' }}</time>
 
     {% if site.social.links %}
-      <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a> y Claudito.
+      <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a> y <a href="https://claude.ai" target="_blank" rel="noopener">Claudito</a>.
     {% else %}
-      <em class="fst-normal">{{ site.social.name }}</em> y Claudito.
+      <em class="fst-normal">{{ site.social.name }}</em> y <a href="https://claude.ai" target="_blank" rel="noopener">Claudito</a>.
     {% endif %}
 
     {% if site.data.locales[include.lang].copyright.brief %}
