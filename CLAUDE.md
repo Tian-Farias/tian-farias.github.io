@@ -2,7 +2,8 @@
 
 Blog/portafolio en Jekyll con el tema [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) (gema `jekyll-theme-chirpy ~> 7.0`), publicado en GitHub Pages con GitHub Actions en **https://tian-farias.github.io**.
 
-- Repo en GitHub: `Tian-Farias/fariax.github.io`. El nombre debe ser `tian-farias.github.io` para que Pages sirva el sitio en la raíz del dominio (renombrarlo es una acción manual del dueño).
+- Repo en GitHub: `Tian-Farias/tian-farias.github.io` (antes `fariax.github.io`; GitHub redirige el nombre viejo).
+- Pages está configurado con **Source: GitHub Actions**. Si vuelve a "Deploy from a branch", el builder clásico falla con "The jekyll-theme-chirpy theme could not be found" y el paso "Setup Pages" del workflow también falla.
 - Idioma del contenido: español neutro. Responder y escribir en español.
 - No existe nada de "iO-Labs": ese nombre se eliminó del sitio y no debe volver.
 
@@ -17,7 +18,7 @@ Blog/portafolio en Jekyll con el tema [Chirpy](https://github.com/cotes2020/jeky
 - Archivos del tema sobrescritos (copiados desde la gema Chirpy 7.x; revisarlos al actualizar el tema):
   - `_data/locales/es-ES.yml`: licencia CC BY-SA 4.0 y texto del pie ("Copyleft, casi todos los derechos reservados.").
   - `_includes/footer.html`: agrega "y Claudito" después del nombre en el ©.
-- `.github/workflows/pages-deploy.yml`: build (Ruby 3.3) + `htmlproofer` + deploy en cada push a `main`.
+- `.github/workflows/pages-deploy.yml`: build (Ruby 3.3) + `htmlproofer` + deploy en cada push a `main`. También se puede lanzar a mano (workflow_dispatch).
 
 ## Ejecutar en local
 
@@ -43,6 +44,9 @@ Jekyll no recarga `_config.yml`: reiniciar el servidor al cambiarlo.
 - No usar `.nojekyll`: el sitio se compila con Actions.
 - Enlaces internos de posts: usar rutas relativas (`/posts/titulo/`), no el dominio.
 - Favicons: se generan desde `assets/img/cristian.jpg` (recorte cuadrado de la cara) con los nombres que espera Chirpy 7.6: `favicon.ico`, `favicon.svg`, `favicon-96x96.png`, `apple-touch-icon.png`, `web-app-manifest-192x192.png` y `web-app-manifest-512x512.png`. Si falta alguno, el sitio muestra el ícono de Chirpy que trae la gema.
+- Google Analytics: `analytics.google.id` en `_config.yml` está vacío a propósito mientras Cristian lo configura. No rellenarlo.
+- Posts de 2021: llevan un aviso `{: .prompt-info }` de publicación original y revisión. Los posts traídos de LinkedIn llevan un aviso con el enlace y la fecha original.
+- Pendiente: la imagen de `_posts/2021-08-25-que-es-un-dato.md` se carga desde Wikimedia (`ProcesamientoDatos.svg`); hay que traerla a `assets/img/` con su atribución de licencia.
 - RSS: Chirpy genera `/feed.xml` (Atom) y el ícono de RSS de la barra lateral viene de `_data/contact.yml`.
 
 ## Contenido y privacidad
@@ -54,9 +58,11 @@ Jekyll no recarga `_config.yml`: reiniciar el servidor al cambiarlo.
 - Cargo actual: Líder de IA e Innovación en SmartJob (desde febrero de 2025). Proyectos internos nombrados en el sitio: SmartForge y Antonia.
 - Tono: primera persona, directo. El humor negro es parte de su firma ("Adeptus Mechanicus" en el tagline y en Sobre Mí); mantenerlo.
 - Cuenta de GitHub: `tian-farias` (la anterior `fariax` ya no se usa).
+- En Desafío Latam (2018–2020) fue alumno, ayudante y profesor de la carrera Data Science.
 
 ## Flujo de trabajo con git
 
-- Desarrollar en la rama indicada para la sesión y empujar a ella. Hacer `git pull` antes de empujar: Cristian también hace commits desde su PC.
+- Rama principal: `main` (cada push publica el sitio). Desarrollar en la rama indicada para la sesión, salvo que Cristian pida trabajar o mergear directo en `main`. Hacer `git pull` antes de empujar: Cristian también hace commits desde su PC.
+- Borrar las ramas de trabajo cuando ya estén mergeadas en `main`.
 - No abrir pull requests salvo que se pidan explícitamente.
 - Commits en español, descriptivos.

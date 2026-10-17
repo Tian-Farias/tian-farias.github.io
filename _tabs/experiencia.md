@@ -47,9 +47,9 @@ Lidero el área de IA e Innovación y su equipo: preventa de soluciones con IA, 
 - A cargo del departamento de infraestructura TI y de la continuidad operativa de sistemas, hardware, comunicaciones y aplicaciones del negocio.
 
 ### Desafiolatam
-**Cargo:** Ayudante de carrera Data Science  
+**Cargo:** Alumno, ayudante y profesor de la carrera Data Science  
 **Período:** Octubre 2018 – Mayo 2020  
-- Ayudante en la carrera de Data Science de las becas Capital Humano de Corfo: Python, Machine Learning, SQL y Big Data.
+- Fui alumno, ayudante y profesor en la carrera de Data Science de las becas Capital Humano de Corfo: Python, Machine Learning, SQL y Big Data.
 
 ### FM Solar
 **Cargo:** Director ejecutivo  

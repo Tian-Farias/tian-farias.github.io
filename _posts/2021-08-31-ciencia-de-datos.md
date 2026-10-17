@@ -74,7 +74,7 @@ No existen datos perfectos y hay que saber que, cuando analizamos datos, **la ba
 - Cambiar datos de formato.
 - Reemplazar valores.
 - Extraer palabras.
-- **IMPORTANTE**: Manejar valores ausentes o perdidos (alerta de spoiler).
+- **IMPORTANTE**: Manejar valores ausentes o perdidos.
 - Otro gran etc.
 
 En mi experiencia hay que tener en cuenta dos cosas importantes en este punto:
@@ -105,7 +105,5 @@ Contar una historia no requiere modelos matemáticos; requiere que sea interesan
 Como conclusión solo puedo repetir lo que dije al principio: el fin de la ciencia de datos es obtener respuestas valiosas de los datos, un valor que es relativo a la persona u organización que lo requiere y que debe ser entregado con una mirada objetiva, involucrándose en el proceso.
 
 Existen muchas formas de obtener este valor; lo importante es que el uso del método científico es una de las herramientas más poderosas para ejecutar esta tarea.
-
-Pero eso es para otra historia.
 
 Saludos

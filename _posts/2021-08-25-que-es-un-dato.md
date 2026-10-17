@@ -14,7 +14,7 @@ image:
 > Publicado originalmente en agosto de 2021. Revisado en octubre de 2026 para corregir errores; el contenido conserva su enfoque original.
 {: .prompt-info }
 
-Con este post comienzo una serie de notas que recopilé hace un tiempo cuando estaba participando en un curso de introducción al análisis de datos. Estas fueron anotaciones rápidas que me ayudaron a entender y desarrollar una intuición respecto a los temas que maneja el mundo de los datos, el cual es muy entretenido.
+Estas son notas que recopilé hace un tiempo cuando estaba participando en un curso de introducción al análisis de datos. Estas fueron anotaciones rápidas que me ayudaron a entender y desarrollar una intuición respecto a los temas que maneja el mundo de los datos, el cual es muy entretenido.
 
 # ¿Qué es un dato?
 
