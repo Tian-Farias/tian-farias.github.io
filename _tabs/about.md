@@ -14,8 +14,8 @@ Llevo más de 20 años construyendo tecnología. Empecé en infraestructura y Li
 ## ¿Qué hago hoy?
 Lidero el área de IA e Innovación de SmartJob, miembro de la Claude Partner Network de Anthropic. Mi equipo diseña y pone en producción sistemas de agentes LLM:
 
-- Una plataforma y metodología que cubre desde la preventa hasta el desarrollo con agentes y el QA automatizado.
-- Un gateway LLM para toda la empresa.
+- **SmartForge:** plataforma y metodología de delivery de software con agentes de IA, en producción con clientes reales. Cubre desde la preventa (un requerimiento o RFP se convierte en análisis funcional, épicas, arquitectura y propuesta técnica, con aprobación humana en cada fase) hasta el desarrollo con agentes y el QA automatizado.
+- **Antonia:** un gateway LLM para toda la empresa.
 - Servidores MCP e integración con Claude Code.
 
 Mi rol cruza arquitectura, código, seguridad y operación. Nos interesa que la IA entregue resultados verificables en procesos reales.
