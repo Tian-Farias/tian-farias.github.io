@@ -18,13 +18,19 @@ Lidero el área de IA e Innovación de SmartJob, miembro de la Claude Partner Ne
 
 Mi rol cruza arquitectura, código, seguridad y operación. Nos interesa que la IA entregue resultados verificables en procesos reales.
 
-## Preventa y emprendimiento
-Hago preventa técnica desde 2014: entiendo el problema del cliente, diseño la solución y estimo lo que realmente cuesta construirla. Fundé dos emprendimientos: CapData (mantenimiento predictivo industrial con IA) y FM Solar (energía para comunidades aisladas).
+## Preventa y emprendimientos anteriores
+
+Hago preventa técnica desde 2014, hoy como parte de mi trabajo en SmartJob: entiendo el problema del cliente, diseño la solución y estimo lo que realmente cuesta construirla. Antes fundé dos emprendimientos, CapData (mantenimiento predictivo industrial con IA, 2019 a 2020) y FM Solar (energía para comunidades aisladas, 2014 a 2018).
 
 ## Aprendizaje continuo
 Soy autodidacta. Todo lo que sé lo aprendí trabajando, construyendo y estudiando por mi cuenta, y sigo haciéndolo, por ejemplo con mis certificaciones recientes de Anthropic en Claude API, MCP y Agent Skills. También cuento con certificaciones de MIT xPro y Google Cloud.
 
 Mi laboratorio actual son LLMs conectados a hardware físico.
 
+## Sobre este sitio
+
+Este blog es un proyecto personal e informativo. Aquí comparto lo que aprendo construyendo con agentes LLM, datos e infraestructura. No ofrezco servicios ni consultorías a través de este sitio. Las opiniones publicadas son mías y no representan a SmartJob ni a sus clientes.
+
 ## Conversemos
-Estoy abierto a conversar sobre proyectos y desafíos de IA aplicada. Puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/cristianfarias) o [GitHub](https://github.com/tian-farias).
+
+Si quieres comentar un post, discutir una idea o contarme cómo lo resolviste tú, puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/cristianfarias) o [GitHub](https://github.com/tian-farias).
