@@ -11,7 +11,7 @@ image:
   alt: Ilustración a lápiz que contrasta un modelo monolítico de 2025 con un ecosistema de agentes que comparten contexto, conectados a un gateway, evals y RAG.
 ---
 
-En febrero de 2025 escribí un documento interno en SmartJob llamado "Diseño de Productos de IA Generativa". La idea era tener un marco común para los proyectos de IA generativa (chatbots, generadores de contenido, automatización de procesos), de modo que cada uno partiera con las mismas preguntas y no desde cero.
+En febrero de 2025 escribí un documento interno en [SmartJob](https://smartjob.cl) llamado "Diseño de Productos de IA Generativa". La idea era tener un marco común para los proyectos de IA generativa (chatbots, generadores de contenido, automatización de procesos), de modo que cada uno partiera con las mismas preguntas y no desde cero.
 
 El documento tenía tres partes. La primera era un proceso en cinco etapas: alcance y objetivos de negocio, comprensión de los datos, selección de tecnología y desarrollo del modelo, pruebas piloto, y despliegue con monitoreo continuo. Cada etapa cerraba con una lista de preguntas clave.
 
@@ -59,7 +59,7 @@ En productos generativos que consumen modelos de terceros, los problemas operati
 
 El documento pensaba en sistemas monolíticos: un modelo, una entrada, una salida. Chatbots, generadores de contenido, optimizadores de procesos. Quedó obsoleto del todo cuando empezamos a construir agentes que interactuaban entre sí.
 
-SmartForge, la plataforma multiagente de entrega de software que construimos con el equipo en SmartJob, partió como un sistema monolítico. Después lo dividimos en agentes independientes, cada uno con su tarea. Con el tiempo esos agentes se volvieron codependientes: la salida de uno es la entrada de otro.
+[SmartForge](https://smartforge.cl), la plataforma multiagente de entrega de software que construimos con el equipo en [SmartJob](https://smartjob.cl), partió como un sistema monolítico. Después lo dividimos en agentes independientes, cada uno con su tarea. Con el tiempo esos agentes se volvieron codependientes: la salida de uno es la entrada de otro.
 
 Ahí apareció el hallazgo más importante. Al principio cada agente tenía un prompt que describía solo su tarea. Hacía bien su parte, pero no sabía para qué servía ni quién iba a leer lo que producía. Cada uno se preocupaba únicamente de su propia respuesta.
 
@@ -102,5 +102,5 @@ El marco del año pasado sirvió. La estructura por etapas, la distinción entre
 
 Probablemente dentro de un año algo de este post también habrá envejecido. Por eso vale la pena escribirlo.
 
-> Este post refleja mi experiencia y opinión personal y no representa a SmartJob ni a sus clientes.
+> Este post refleja mi experiencia y opinión personal y no representa a [SmartJob](https://smartjob.cl) ni a sus clientes.
 {: .prompt-info }
