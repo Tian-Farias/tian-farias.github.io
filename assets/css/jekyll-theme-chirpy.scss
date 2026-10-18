@@ -1,0 +1,44 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Panel derecho completo fijo al hacer scroll (ver _layouts/default.html). */
+#panel-wrapper .panel-sticky {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  .access {
+    position: static;
+  }
+}
+
+/* El tema fija el TOC por separado (clase position-sticky con !important); dentro del panel fijo debe fluir normal. */
+#toc-wrapper {
+  position: static !important;
+  max-height: none;
+  overflow-y: visible;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+}
+
+.toc-border-cover {
+  display: none;
+}
