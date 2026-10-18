@@ -1,8 +1,9 @@
 # Sitio personal de Cristian "Tian" Farias
 
-Blog/portafolio en Jekyll con el tema [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) (gema `jekyll-theme-chirpy ~> 7.0`), publicado en GitHub Pages con GitHub Actions en **https://tian-farias.github.io**.
+Blog/portafolio en Jekyll con el tema [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) (gema `jekyll-theme-chirpy ~> 7.0`), publicado en GitHub Pages con GitHub Actions en **https://anomalia.cl** (dominio propio; `tian-farias.github.io` redirige ahí).
 
 - Repo en GitHub: `Tian-Farias/tian-farias.github.io` (antes `fariax.github.io`; GitHub redirige el nombre viejo).
+- Dominio propio `anomalia.cl`: se configura en Settings → Pages → Custom domain. Con despliegue por Actions no hace falta archivo `CNAME` en el repo. Los proyectos de GitHub Pages de la cuenta (ej. Cerebro3D) quedan bajo `anomalia.cl/<repo>/`.
 - Pages está configurado con **Source: GitHub Actions**. Si vuelve a "Deploy from a branch", el builder clásico falla con "The jekyll-theme-chirpy theme could not be found" y el paso "Setup Pages" del workflow también falla.
 - Idioma del contenido: español neutro. Responder y escribir en español.
 - No existe nada de "iO-Labs": ese nombre se eliminó del sitio y no debe volver.
@@ -40,7 +41,7 @@ Jekyll no recarga `_config.yml`: reiniciar el servidor al cambiarlo.
 
 ## Cosas a tener en cuenta
 
-- **`url` y `baseurl`:** `url` es `https://tian-farias.github.io`; `baseurl` debe quedar **vacío** (`""`). Al editar con reemplazos de texto, no tocar `baseurl` (ya ocurrió una vez y rompió todos los enlaces).
+- **`url` y `baseurl`:** `url` es `https://anomalia.cl`; `baseurl` debe quedar **vacío** (`""`). Al editar con reemplazos de texto, no tocar `baseurl` (ya ocurrió una vez y rompió todos los enlaces).
 - **Ruby 3.4+ (ej. Arch):** el `Gemfile` agrega `erb`, `csv`, `base64`, `bigdecimal` y `logger` porque Ruby ya no las incluye y Jekyll las necesita. No quitarlas.
 - `Gemfile.lock` está en `.gitignore`.
 - No usar `.nojekyll`: el sitio se compila con Actions.

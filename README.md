@@ -2,7 +2,7 @@
 
 Blog personal de Cristian "Tian" Farias: líder de IA e Innovación, notas sobre agentes LLM, MCP, datos y automatización.
 
-Publicado en <https://tian-farias.github.io>. Hecho con [Jekyll](https://jekyllrb.com/) y el tema [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy), desplegado con GitHub Actions.
+Publicado en <https://anomalia.cl>. Hecho con [Jekyll](https://jekyllrb.com/) y el tema [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy), desplegado con GitHub Actions.
 
 ## Desarrollo local
 
