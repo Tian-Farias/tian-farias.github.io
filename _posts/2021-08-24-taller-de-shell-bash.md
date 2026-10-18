@@ -1,6 +1,6 @@
 ---
 title: "Shell bash - Guía de iniciación"
-author: Cristian
+author: Cristian Farias
 description: Una introducción clara y concreta a los comandos básicos de la línea de comandos con bash.
 categories: [Talleres]
 tags: [Shell, Bash]

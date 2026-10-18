@@ -1,6 +1,6 @@
 ---
 title: "¿Qué es un dato?"
-author: Cristian
+author: Cristian Farias
 description: Una pequeña reflexión sobre lo que es un dato, cómo entenderlo y sus tipos.
 categories: [Datos]
 tags: [Notas, Datos]
