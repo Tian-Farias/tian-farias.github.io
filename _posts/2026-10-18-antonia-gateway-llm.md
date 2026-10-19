@@ -6,10 +6,9 @@ categories: [IA]
 tags: [IA Generativa, LLM, Gateway, Infraestructura, Seguridad]
 toc: true
 comments: true
-# PENDIENTE: descomentar cuando exista la imagen en assets/img
-# image:
-#   path: /assets/img/antonia-gateway-llm.webp
-#   alt: "Diagrama de un gateway que recibe solicitudes de varios equipos y las distribuye hacia los modelos de IA."
+image:
+  path: /assets/img/antonia-gateway-llm.webp
+  alt: "Diagrama dibujado a mano: equipos, proyectos y agentes envían solicitudes a Antonia, el gateway LLM con una hormiga y un escudo de seguridad, que las enruta hacia Vertex AI y los modelos de IA."
 ---
 
 Cuando una empresa empieza a usar IA, rara vez lo decide en una reunión. Pasa de a poco: un equipo prueba un modelo para un prototipo, otro lo integra en un proyecto, alguien arma un agente para automatizar una tarea repetitiva. Cada uno se conecta por su lado y, al principio, nadie lo ve como un problema.
