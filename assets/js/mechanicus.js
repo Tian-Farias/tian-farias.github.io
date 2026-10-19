@@ -10,8 +10,8 @@
   var script = document.currentScript;
   var cfg = {
     img: script && script.dataset.img,
-    every: Number((script && script.dataset.every) || 10000),
-    show: Number((script && script.dataset.show) || 3500)
+    every: Number((script && script.dataset.every) || 5000),
+    show: Number((script && script.dataset.show) || 4000)
   };
 
   var ORACIONES = [
