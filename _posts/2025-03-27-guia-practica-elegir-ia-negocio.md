@@ -1,6 +1,6 @@
 ---
 title: "Guía práctica para elegir correctamente la Inteligencia Artificial en tu negocio"
-author: Cristian Farias
+author: Cristian
 description: Cuándo usar Machine Learning, Deep Learning o IA Generativa, cómo aprovechar el fine-tuning y por qué los datos son la base de todo.
 categories: [IA]
 tags: [IA, IA Generativa, Machine Learning, Deep Learning, Datos]

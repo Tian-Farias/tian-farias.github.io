@@ -1,6 +1,6 @@
 ---
 title: "Lo que escribí sobre productos de IA generativa en febrero de 2025, y lo que cambió"
-author: Cristian Farias
+author: Cristian
 description: Releí un marco que escribí para diseñar productos de IA generativa. Qué resistió, qué envejeció y qué apareció con los agentes.
 categories: [IA]
 tags: [IA, IA Generativa, Agentes, LLM, MLOps]

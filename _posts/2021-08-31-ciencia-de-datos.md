@@ -1,6 +1,6 @@
 ---
 title: "¿Qué es la ciencia de datos?"
-author: Cristian Farias
+author: Cristian
 description: Una definición de la ciencia de datos libre de metodologías, técnicas y herramientas, y cinco pasos básicos para obtener valor de los datos.
 categories: [Datos]
 tags: [Notas, Datos]
