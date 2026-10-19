@@ -42,3 +42,54 @@
 .toc-border-cover {
   display: none;
 }
+
+/* Avatar Mechanicus (ver assets/js/mechanicus.js).
+   El subtítulo crece con el texto para que la oración no se monte sobre el menú. */
+#sidebar .site-subtitle {
+  height: auto;
+  min-height: 4.5rem;
+  transition: color 0.3s;
+
+  &.mech-oracion {
+    color: #b3261e;
+    font-family: 'Courier New', monospace;
+    font-style: normal !important;
+    letter-spacing: 0.2px;
+  }
+}
+
+#sidebar #avatar {
+  transition: box-shadow 0.3s;
+
+  &.mech-on {
+    box-shadow: #b3261e 0 0 0 2px, rgb(179 38 30 / 55%) 0 0 18px 2px;
+
+    img {
+      filter: contrast(1.15) saturate(0.85);
+    }
+  }
+
+  &.mech-glitch img {
+    animation: mech-glitch 0.48s steps(2, end) both;
+  }
+}
+
+#sidebar .site-subtitle.mech-glitch-text {
+  animation: mech-glitch-text 0.48s steps(3, end) both;
+}
+
+@keyframes mech-glitch {
+  0% { transform: translate(0, 0); filter: none; }
+  20% { transform: translate(-3px, 1px) skewX(6deg); filter: hue-rotate(-40deg) saturate(3) contrast(1.6); }
+  40% { transform: translate(3px, -2px); filter: invert(1) brightness(0.6); opacity: 0.6; }
+  60% { transform: translate(-2px, 2px) skewX(-8deg); filter: grayscale(1) contrast(2.5); }
+  80% { transform: translate(2px, 0); filter: sepia(1) hue-rotate(-50deg) saturate(5); opacity: 0.85; }
+  100% { transform: translate(0, 0); filter: none; opacity: 1; }
+}
+
+@keyframes mech-glitch-text {
+  0% { opacity: 1; transform: none; }
+  30% { opacity: 0.2; transform: translateX(-2px); }
+  60% { opacity: 0.8; transform: translateX(2px); text-shadow: -1px 0 #b3261e, 1px 0 #00a3a3; }
+  100% { opacity: 1; transform: none; text-shadow: none; }
+}

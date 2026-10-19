@@ -20,6 +20,7 @@ Blog/portafolio en Jekyll con el tema [Chirpy](https://github.com/cotes2020/jeky
   - `_data/locales/es-ES.yml`: licencia CC BY-SA 4.0 y texto del pie ("Copyleft, casi todos los derechos reservados.").
   - `_includes/footer.html`: agrega "y Claudito" después del nombre en el ©.
   - `_includes/trending-tags.html`: igual al del tema, más un `include projects.html` al final para mostrar la sección "Proyectos" en el panel derecho.
+  - `_includes/metadata-hook.html`: placeholder vacío en el tema; aquí carga `assets/js/mechanicus.js`, que cada 10 s cambia el avatar por `assets/img/cristian-mechanicus.jpg` durante 3,5 s y reemplaza el subtítulo por una oración Mechanicus (lista `ORACIONES` en el JS). Intervalo y duración se ajustan con `data-every` y `data-show`. Estilos al final de `assets/css/jekyll-theme-chirpy.scss`.
 - Proyectos del panel derecho: se listan en `_data/projects.yml` (`name`, `url`, `repo`, `description`) y se dibujan con `_includes/projects.html`. El panel derecho solo se ve en pantallas anchas (Chirpy lo oculta en móvil).
 - `.github/workflows/pages-deploy.yml`: build (Ruby 3.3) + `htmlproofer` + deploy en cada push a `main`. También se puede lanzar a mano (workflow_dispatch).
 
