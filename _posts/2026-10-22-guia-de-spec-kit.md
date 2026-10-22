@@ -231,6 +231,7 @@ Este es el momento en que la consola se queda esperando. Ejemplo de salida (los 
 | B      | Teclas W A S D                                      | Cómodo con la mano izquierda |
 | Custom | Tu propia respuesta                                 |                              |
 ```
+{: .sin-ajuste }
 
 Respondes en el chat de Claude Code, todas las preguntas en una sola línea:
 
@@ -274,6 +275,7 @@ Esto define si la rotación puede fallar y cómo lo comprueban las pruebas.
 | B      | La pieza se corre una columna para poder rotar      |
 | C      | La pieza rota igual y queda superpuesta             |
 ```
+{: .sin-ajuste }
 
 Respuestas válidas:
 

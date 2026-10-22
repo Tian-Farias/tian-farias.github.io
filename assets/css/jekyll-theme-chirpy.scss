@@ -185,3 +185,11 @@ dialog.tabla-modal {
     }
   }
 }
+
+/* Bloques de texto (prompts largos): las líneas se ajustan al ancho en vez de exigir scroll.
+   Para mantener el scroll en un bloque (ej. tablas dibujadas con caracteres), agregar {: .sin-ajuste } debajo del bloque. */
+.content div.language-text:not(.sin-ajuste) pre,
+.content div.language-text:not(.sin-ajuste) pre code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
