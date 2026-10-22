@@ -399,6 +399,10 @@ Al final, `analyze` pregunta si quieres que sugiera ediciones concretas. Puedes 
 
 ### 5.6 Implementar
 
+Este es el primer paso que escribe código. Hasta aquí todo fueron documentos: la constitución, la spec, el plan y las tareas. Ahora el agente toma `tasks.md` y, tarea por tarea, crea los archivos del juego que definió el plan (`index.html`, `style.css`, `src/game.js`, `src/ui.js` y las pruebas en `tests/`).
+
+Si llegaste hasta aquí con los documentos revisados y sin hallazgos CRITICAL ni HIGH, el agente no tiene nada que inventar: cada línea de código responde a una tarea, cada tarea a un requisito y cada requisito a algo que tú aprobaste.
+
 **[Claude Code]**
 
 ```text
