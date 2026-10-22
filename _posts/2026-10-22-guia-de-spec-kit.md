@@ -24,6 +24,19 @@ La respuesta corta a mi duda original: se responde escribiendo en el chat de Cla
 > Un Adeptus Mechanicus diría que el rito existe para que el espíritu máquina no se enoje. Aquí el rito existe para que el agente no improvise.
 {: .prompt-tip }
 
+## Qué es SDD y qué es Spec Kit
+
+**Spec-Driven Development (SDD)** es una forma de trabajar con agentes de IA en la que la especificación manda. Primero se escribe qué debe hacer el software y por qué, después cómo se construye, después las tareas, y recién al final el agente escribe el código. Cada documento sale del anterior y el código tiene que cumplir con todos. Si algo cambia, primero se cambia el documento y el código lo sigue.
+
+La idea responde a un problema conocido de pedirle cosas a un agente en texto libre, lo que hoy se llama *vibe coding*. Sirve para un prototipo, pero las decisiones quedan repartidas en el historial del chat, nadie sabe por qué el código hace lo que hace y cada corrección puede romper algo que ya funcionaba. Con SDD las decisiones quedan escritas en archivos versionados con git, que el agente lee en cada paso y que una persona puede revisar.
+
+**Spec Kit** es el kit de herramientas de GitHub para aplicar SDD. GitHub lo liberó como código abierto en septiembre de 2025 y funciona con varios agentes, entre ellos Claude Code y GitHub Copilot. Tiene dos partes:
+
+- `specify`, un programa de terminal que prepara el proyecto.
+- Un conjunto de comandos (`/speckit-constitution`, `/speckit-specify`, `/speckit-plan` y otros) que se ejecutan dentro del agente. Cada comando es un archivo de instrucciones que le dice al agente qué leer, qué escribir y qué no tocar.
+
+El flujo tiene cinco capas: constitución (las reglas del proyecto), spec (qué y por qué), plan (cómo), tareas (los pasos) y código. La Parte 1 de esta guía detalla qué hace cada comando.
+
 ## Antes de empezar
 
 La guía recorre el ciclo completo de Spec-Driven Development usando solo comandos de Spec Kit: crear un Tetris, hacerlo evolucionar y corregir un bug, con toda la documentación alineada. Está escrita para alguien que no sabe nada del tema y no tiene a quién preguntarle.
