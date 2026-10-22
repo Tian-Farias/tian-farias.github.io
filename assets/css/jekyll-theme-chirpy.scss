@@ -94,3 +94,94 @@
   60% { opacity: 0.8; transform: translateX(2px); text-shadow: -1px 0 #b3261e, 1px 0 #00a3a3; }
   100% { opacity: 1; transform: none; text-shadow: none; }
 }
+
+/* Tablas anchas que se abren en un modal al hacer clic (assets/js/tablas-modal.js). */
+.content .table-wrapper.tabla-ampliable {
+  cursor: zoom-in;
+  margin-bottom: 0.3rem;
+}
+
+.content .tabla-ampliar {
+  display: block;
+  margin: 0 0 1rem auto;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  color: var(--text-muted-color, #6c757d);
+  background: none;
+  border: 1px solid var(--main-border-color, #dee2e6);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--text-color, #212529);
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+html.tabla-modal-abierto {
+  overflow: hidden;
+}
+
+dialog.tabla-modal {
+  width: min(96vw, 1400px);
+  max-width: 96vw;
+  max-height: 90vh;
+  padding: 2.5rem 1rem 1rem;
+  border: 1px solid var(--main-border-color, #dee2e6);
+  border-radius: 0.6rem;
+  color: var(--text-color, #212529);
+  background: var(--main-bg, #fff);
+  box-shadow: 0 10px 40px rgb(0 0 0 / 35%);
+
+  &::backdrop {
+    background: rgb(0 0 0 / 60%);
+  }
+
+  .tabla-modal-cuerpo {
+    max-height: calc(90vh - 3.5rem);
+    overflow: auto;
+  }
+
+  table {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+
+    th,
+    td {
+      padding: 0.45rem 0.75rem;
+      border: 1px solid var(--main-border-color, #dee2e6);
+      white-space: normal;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--card-header-bg, rgb(0 0 0 / 4%));
+    }
+
+    code {
+      white-space: nowrap;
+    }
+  }
+
+  .tabla-modal-cerrar {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.7rem;
+    border: 0;
+    background: none;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--text-muted-color, #6c757d);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--text-color, #212529);
+    }
+  }
+}
