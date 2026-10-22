@@ -634,4 +634,4 @@ Si prefieres que cada feature tenga su propia rama de git, Spec Kit tiene una ex
 | El diff muestra código cambiado después de `clarify`, `plan`, `tasks`, `analyze` o `converge` | El agente se salió de lo que ese comando debe hacer | `git restore .` y `git clean -fd`, y repetir el comando |
 | Desaparecieron las marcas `[X]` | Ejecutaste `tasks` después de implementar | Volver al commit anterior y usar `converge` en su lugar |
 
-Si algo de esta guía no cuadra con tu versión de Spec Kit, o te trabaste en un paso que no está aquí, cuéntamelo en los comentarios de la publicación en [LinkedIn](https://www.linkedin.com/in/cristianfarias).
+Si algo de esta guía no cuadra con tu versión de Spec Kit, o te trabaste en un paso que no está aquí, cuéntamelo en redes sociales.
