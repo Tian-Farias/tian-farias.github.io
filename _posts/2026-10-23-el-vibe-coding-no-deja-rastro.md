@@ -83,6 +83,3 @@ Uso los dos, en momentos distintos:
 Lo que haría distinto en aquel prototipo es formalizar antes. El momento de escribir las especificaciones es cuando el prototipo empieza a crecer. Hoy, cuando veo que algo se está saliendo de "prueba rápida", paro y escribo antes de seguir.
 
 Vibrar sirve para descubrir qué construir. Para construirlo en serio, y que otro pueda entenderlo después, necesitas dejar rastro.
-
-> Este post refleja mi experiencia y opinión personal y no representa a SmartJob ni a sus clientes.
-{: .prompt-info }
