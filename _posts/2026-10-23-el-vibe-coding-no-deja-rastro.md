@@ -11,7 +11,7 @@ image:
   alt: "Ilustración en una servilleta: a la izquierda el ciclo del vibe coding y un agente que olvida lo decidido, a la derecha SDD con spec.md, plan.md, tasks.md y la constitución del proyecto"
 ---
 
-En la [Guía de Spec Kit](/posts/guia-de-spec-kit/) expliqué cómo trabajar con Spec-Driven Development (SDD). Faltaba el porqué. Y el porqué no lo saqué de un libro: lo aprendí rehaciendo la misma aplicación completa varias veces.
+En la [Guía de Spec Kit](/posts/guia-de-spec-kit/) expliqué cómo trabajar con Spec-Driven Development (SDD). Faltaba el porqué, y lo aprendí rehaciendo la misma aplicación completa varias veces.
 
 ## Vibrar está bien
 
@@ -35,7 +35,7 @@ Lo más curioso fue el idioma. Pese a que se lo aclaraba a diario, el agente sie
 
 Visto hoy, tiene explicación. Una instrucción dada en el chat compite con todo lo demás que hay en el contexto, y en conversaciones largas las indicaciones del principio pierden peso o terminan resumidas. Si la regla no está escrita en un archivo que el agente lee en cada sesión, depende de la suerte.
 
-Esa es justamente una de las cosas que resuelve SDD. En Spec Kit, la constitución del proyecto (`constitution.md`) deja por escrito los principios que no se negocian: idioma, estándares, restricciones. El agente la lee siempre, no solo cuando me acuerdo de repetírsela.
+Esa es justamente una de las cosas que resuelve SDD. En Spec Kit, la constitución del proyecto (`constitution.md`) deja por escrito los principios que no se negocian: idioma, estándares, restricciones. El agente la lee en cada sesión, sin que yo tenga que repetírsela.
 
 ## Qué se pierde sin especificación
 
@@ -74,13 +74,13 @@ Creo que parte de la responsabilidad de ese pensamiento es nuestra, de quienes o
 
 ## Cómo trabajo hoy
 
-No elegí entre uno y otro. Los uso en momentos distintos:
+Uso los dos, en momentos distintos:
 
 - **Vibe coding para prototipar.** Rápido y sencillo, para ver si la idea tiene sentido.
 - **Del prototipo a las especificaciones.** Lo que aprendo prototipando me sirve para darle forma a las especificaciones iniciales.
 - **SDD para evolucionar.** Si el proyecto vale la pena o aparecen requerimientos nuevos, sigue creciendo de forma ordenada, con especificación, plan y tareas.
 
-Lo que haría distinto en aquel prototipo es formalizar antes. El momento de escribir las especificaciones es cuando el prototipo empieza a crecer, no después de rehacerlo por tercera vez. Hoy, cuando veo que algo se está saliendo de "prueba rápida", paro y escribo antes de seguir.
+Lo que haría distinto en aquel prototipo es formalizar antes. El momento de escribir las especificaciones es cuando el prototipo empieza a crecer. Hoy, cuando veo que algo se está saliendo de "prueba rápida", paro y escribo antes de seguir.
 
 Vibrar sirve para descubrir qué construir. Para construirlo en serio, y que otro pueda entenderlo después, necesitas dejar rastro.
 
