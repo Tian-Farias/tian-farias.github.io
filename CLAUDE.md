@@ -71,3 +71,4 @@ Jekyll no recarga `_config.yml`: reiniciar el servidor al cambiarlo.
 - Borrar las ramas de trabajo cuando ya estén mergeadas en `main`.
 - No abrir pull requests salvo que se pidan explícitamente.
 - Commits en español, descriptivos.
+- Los mensajes de commit describen el cambio en el sitio, sin mencionar empleadores, clientes ni decisiones internas (el repo es público).
