@@ -95,6 +95,17 @@
   100% { opacity: 1; transform: none; text-shadow: none; }
 }
 
+/* Tablas con texto largo que se ajustan al ancho del post en vez de hacer scroll.
+   Chirpy deja las celdas en una sola línea (white-space: nowrap). Uso: {: .tabla-ajustada } bajo la tabla. */
+.content table.tabla-ajustada {
+  width: 100%;
+
+  th,
+  td {
+    white-space: normal;
+  }
+}
+
 /* Tablas anchas que se abren en un modal al hacer clic (assets/js/tablas-modal.js). */
 .content .table-wrapper.tabla-ampliable {
   cursor: zoom-in;
@@ -192,4 +203,68 @@ dialog.tabla-modal {
 .content div.language-text:not(.sin-ajuste) pre code {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+
+/* Tarjeta de repositorio de GitHub (_includes/github-repo.html). */
+.content a.github-repo {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--main-border-color, #dee2e6);
+  border-radius: 0.75rem;
+  color: var(--text-color, #212529);
+  text-decoration: none;
+
+  .github-repo-cuerpo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .github-repo-nombre {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  .github-repo-descripcion {
+    color: var(--text-muted-color, #6c757d);
+  }
+
+  .github-repo-pie {
+    font-size: 0.85rem;
+    color: var(--text-muted-color, #6c757d);
+  }
+
+  .github-repo-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 0.75rem;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    border-color: var(--link-color, #0056b2);
+
+    .github-repo-pie {
+      color: var(--link-color, #0056b2);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .content a.github-repo .github-repo-avatar {
+    display: none;
+  }
 }

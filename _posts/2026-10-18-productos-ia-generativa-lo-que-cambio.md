@@ -77,7 +77,7 @@ Sin esa capa, el control de costos y la auditoría quedan dispersos en cada apli
 
 La sección de pruebas era la más débil del documento. Hablaba de pruebas unitarias y retroalimentación de usuarios, sin un método para medir calidad cuando la salida es texto libre.
 
-Hoy considero las evals parte del producto desde el primer día: un conjunto de casos representativos, criterios explícitos de lo que es una buena respuesta y una forma de correrlos cada vez que cambia el prompt, el modelo o los datos. Sin evals, cambiar de modelo es una apuesta.
+Hoy considero las evals parte del producto desde el primer día: un conjunto de casos representativos, criterios explícitos de lo que es una buena respuesta y una forma de correrlos cada vez que cambia el prompt, el modelo o los datos. Sin evals, cambiar de modelo es una apuesta. Un ejemplo concreto es el [benchmark de LearningAgent](/posts/learningagent-un-agente-desde-cero/#medir-en-vez-de-suponer): una conversación guionada con preguntas de control cuya respuesta se conoce de antemano.
 
 ### Seguridad en agentes
 

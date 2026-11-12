@@ -1,0 +1,8 @@
+{%- comment -%}
+  Enlace a un post que puede no estar publicado todavía (fecha futura).
+  Uso: {% include post-link.html slug='titulo-del-post' text='Texto' hash='ancla' %}
+  Si el post ya existe en site.posts, genera un enlace Markdown. Si no, deja el texto con "(próximamente)".
+{%- endcomment -%}
+{%- capture post_url -%}/posts/{{ include.slug }}/{%- endcapture -%}
+{%- assign target = site.posts | where: "url", post_url | first -%}
+{%- if target -%}[{{ include.text }}]({{ target.url | relative_url }}{% if include.hash %}#{{ include.hash }}{% endif %}){%- else -%}{{ include.text }} (próximamente){%- endif -%}

@@ -33,7 +33,7 @@ Con el tiempo, el agente perdía contexto que habíamos aclarado al principio. D
 
 Lo más curioso fue el idioma. Pese a que se lo aclaraba a diario, el agente siempre terminaba hablando y programando en rioplatense, argentino. Se lo pedía en la mañana y al rato volvía al vos. No hubo caso de que eso cambiara. Ni con incienso ni con letanías al Omnissiah.
 
-Visto hoy, tiene explicación. Una instrucción dada en el chat compite con todo lo demás que hay en el contexto, y en conversaciones largas las indicaciones del principio pierden peso o terminan resumidas. Si la regla no está escrita en un archivo que el agente lee en cada sesión, depende de la suerte.
+Visto hoy, tiene explicación. Una instrucción dada en el chat compite con todo lo demás que hay en el contexto, y en conversaciones largas las indicaciones del principio pierden peso o terminan resumidas. En {% include post-link.html slug="learningagent-v003-compactacion-de-memoria" text="LearningAgent v003" %} construí y medí ese mecanismo desde cero. Si la regla no está escrita en un archivo que el agente lee en cada sesión, depende de la suerte.
 
 Esa es justamente una de las cosas que resuelve SDD. En Spec Kit, la constitución del proyecto (`constitution.md`) deja por escrito los principios que no se negocian: idioma, estándares, restricciones. El agente la lee en cada sesión, sin que yo tenga que repetírsela.
 

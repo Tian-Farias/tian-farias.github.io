@@ -8,3 +8,7 @@
 ></script>
 <!-- Tablas anchas: clic para abrirlas en un modal (estilos al final de assets/css/jekyll-theme-chirpy.scss). -->
 <script src="{{ '/assets/js/tablas-modal.js' | relative_url }}" defer></script>
+{% if page.layout == 'post' %}
+<!-- Enlaces del texto de los posts: se abren en una pestaña nueva. -->
+<script src="{{ '/assets/js/enlaces-nueva-pestana.js' | relative_url }}" defer></script>
+{% endif %}

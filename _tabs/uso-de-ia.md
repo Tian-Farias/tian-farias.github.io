@@ -3,6 +3,7 @@
 icon: fas fa-robot
 order: 6
 title: Uso de IA
+description: "Cómo uso herramientas de IA en este sitio: apoyan la escritura y la revisión, pero las ideas, las decisiones y las opiniones son mías."
 ---
 
 Uso herramientas de IA para apoyar mis procesos creativos, la escritura y todo lo que se pueda facilitar: ordenar ideas, redactar borradores, revisar y pulir texto. Mi relación con las máquinas es la que corresponde: respeto el espíritu de la máquina, pero la máquina no manda.

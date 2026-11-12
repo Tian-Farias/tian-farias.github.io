@@ -5,3 +5,8 @@
   url: https://anomalia.cl/Cerebro3D/
   repo: https://github.com/Tian-Farias/Cerebro3D
   description: Atlas 3D interactivo del encéfalo humano para estudiantes de Psicología.
+
+- name: LearningAgent
+  url: /posts/learningagent-un-agente-desde-cero/
+  repo: https://github.com/Tian-Farias/LearningAgent
+  description: Un agente de IA construido desde cero, una capacidad a la vez.

@@ -15,6 +15,10 @@ tabs:
   tags: Etiquetas
   archives: Archivo
   about: Acerca de
+  # Pestañas propias: Chirpy arma el <title> con page.title en minúsculas como clave
+  sobre mí: Sobre Mí
+  experiencia: Experiencia
+  uso de ia: Uso de IA
 
 # the text displayed in the search bar & search results
 search:

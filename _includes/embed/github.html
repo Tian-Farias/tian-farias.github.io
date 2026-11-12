@@ -1,0 +1,21 @@
+{%- comment -%}
+  Tarjeta de un repositorio de GitHub, con el diseño de la que muestran X y LinkedIn.
+  Se arma con HTML y CSS del sitio, sin imágenes externas.
+  Uso (igual que los embeds de Chirpy, como embed/youtube.html):
+  {% include embed/github.html repo='Tian-Farias/LearningAgent' description='Construcción de un agente de IA paso a paso' %}
+
+  El avatar es decorativo y va como fondo CSS de un <span>, sin <img>: Chirpy
+  (_includes/refactor-content.html) envuelve cada <img> del contenido en un enlace al
+  visor de imágenes, que quedaría anidado dentro de este enlace y rompería la tarjeta.
+{%- endcomment -%}
+{%- assign partes = include.repo | split: "/" -%}
+<a class="github-repo" href="https://github.com/{{ include.repo }}" target="_blank" rel="noopener noreferrer">
+  <span class="github-repo-cuerpo">
+    <span class="github-repo-nombre">{{ partes[0] }}/<strong>{{ partes[1] }}</strong></span>
+    {%- if include.description %}
+    <span class="github-repo-descripcion">{{ include.description }}</span>
+    {%- endif %}
+    <span class="github-repo-pie"><i class="fab fa-github" aria-hidden="true"></i> github.com/{{ include.repo }}</span>
+  </span>
+  <span class="github-repo-avatar" style="background-image: url('{{ '/assets/img/cristian.jpg' | relative_url }}')" aria-hidden="true"></span>
+</a>

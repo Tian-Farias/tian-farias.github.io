@@ -3,6 +3,7 @@
 icon: fas fa-info-circle
 order: 1
 title: Sobre Mí
+description: "Cristian Farias (Tian), líder de IA e Innovación en SmartJob. Más de 20 años en infraestructura, Linux, datos y MLOps, y hoy agentes LLM, MCP y Spec-Driven Development."
 ---
 
 ¡Hola! Soy Cristian Farias (Tian), sacerdote del Adeptus Mechanicus en horario no laboral: la carne es débil, pero los pipelines son eternos.

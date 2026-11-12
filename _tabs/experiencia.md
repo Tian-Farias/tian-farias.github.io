@@ -3,6 +3,7 @@
 icon: fas fa-briefcase
 order: 2
 title: Experiencia
+description: "Trayectoria profesional de Cristian Farias: IA e Innovación en SmartJob, DataOps y MLOps en Transbank, y más de 20 años en infraestructura, datos e IA."
 ---
 ### [SmartJob](https://smartjob.cl)
 **Cargo:** Líder de IA e Innovación  
