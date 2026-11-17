@@ -57,7 +57,7 @@ Jekyll no recarga `_config.yml`: reiniciar el servidor al cambiarlo.
 - Google Analytics: `analytics.google.id` en `_config.yml` está vacío a propósito mientras Cristian lo configura. No rellenarlo.
 - Posts de 2021: llevan un aviso `{: .prompt-info }` de publicación original y revisión. Los posts traídos de LinkedIn llevan un aviso con el enlace y la fecha original.
 - Pendiente: la imagen de `_posts/2021-08-25-que-es-un-dato.md` se carga desde Wikimedia (`ProcesamientoDatos.svg`); hay que traerla a `assets/img/` con su atribución de licencia.
-- RSS: Chirpy genera `/feed.xml` (Atom) y el ícono de RSS de la barra lateral viene de `_data/contact.yml`.
+- RSS: `/feed.xml` (Atom) sale de `assets/feed.xml`, copia de la plantilla de Chirpy 7.6 (revisarla al actualizar el tema). A diferencia del tema (5 posts, solo resumen), incluye todos los posts y cada entrada lleva el post completo en `<content type="html">`, con los `href`/`src` relativos pasados a URL absolutas. No usa `layout: compress` porque aplastaría los espacios de los bloques de código, y escapa cada campo con `xml_escape` en vez del reemplazo global de `&` del tema. Cada entrada con portada lleva `<media:thumbnail>` (namespace Media RSS) para publicar en LinkedIn desde Make: como LinkedIn no acepta `.webp`, si la portada es `.webp` apunta a `assets/img/og/<nombre>.jpg`, y si ese `.jpg` no existe la entrada sale sin thumbnail. **Al agregar un post con portada `.webp`, correr `scripts/generar-portadas-jpg.sh`** (ImageMagick; genera los `.jpg` que falten, `--forzar` para regenerar todos) y commitear el `.jpg`. El `og:image` sigue usando el `.webp`. El ícono de RSS de la barra lateral viene de `_data/contact.yml`.
 
 ## Contenido y privacidad
 

@@ -1,0 +1,71 @@
+---
+permalink: /feed.xml
+# Atom Feed, reference: https://validator.w3.org/feed/docs/atom.html
+# Basado en assets/feed.xml de jekyll-theme-chirpy 7.6.0, con estos cambios:
+# - incluye todos los posts (el tema trae solo 5);
+# - cada entrada lleva el post completo en <content type="html">, con los
+#   enlaces e imágenes relativos (/posts/..., /assets/...) pasados a URL absolutas;
+# - sin `layout: compress`, que aplastaría los espacios de los bloques de código;
+# - cada campo se escapa con xml_escape en vez del reemplazo global de '&'.
+---
+{%- assign site_root = '/' | absolute_url -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <id>{{ site_root }}</id>
+  <title>{{ site.title | xml_escape }}</title>
+  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author>
+    <name>{{ site.social.name | xml_escape }}</name>
+    <uri>{{ site_root }}</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="{{ page.url | absolute_url }}"/>
+  <link rel="alternate" type="text/html" hreflang="{{ site.alt_lang | default: site.lang }}" href="{{ site_root }}"/>
+  <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+  <rights>© {{ 'now' | date: '%Y' }} {{ site.social.name | xml_escape }}</rights>
+  <icon>{{ '/assets/img/favicons/favicon.ico' | absolute_url }}</icon>
+  <logo>{{ '/assets/img/favicons/favicon-96x96.png' | absolute_url }}</logo>
+{% for post in site.posts %}
+  {%- assign post_absolute_url = post.url | absolute_url -%}
+  {%- capture summary -%}{% include post-summary.html max_length=400 %}{%- endcapture -%}
+  {%- assign full_content = post.content
+    | replace: 'href="/', 'href="__RAIZ__'
+    | replace: 'src="/', 'src="__RAIZ__'
+    | replace: '__RAIZ__/', '//'
+    | replace: '__RAIZ__', site_root
+  %}
+  {%- comment -%}
+    Portada para <media:thumbnail>: si es .webp se usa su .jpg en assets/img/og/
+    (scripts/generar-portadas-jpg.sh), porque LinkedIn no acepta .webp.
+    Si ese .jpg no existe, la entrada va sin thumbnail.
+  {%- endcomment -%}
+  {%- assign thumb = post.image.path | default: post.image -%}
+  {%- if thumb -%}
+    {%- assign thumb_down = thumb | downcase -%}
+    {%- if thumb_down contains '.webp' -%}
+      {%- assign thumb_name = thumb | split: '/' | last | split: '.' | first -%}
+      {%- assign thumb = '/assets/img/og/' | append: thumb_name | append: '.jpg' -%}
+      {%- assign thumb_files = site.static_files | where: 'path', thumb -%}
+      {%- if thumb_files.size == 0 -%}{%- assign thumb = nil -%}{%- endif -%}
+    {%- endif -%}
+  {%- endif %}
+  <entry>
+    <title>{{ post.title | xml_escape }}</title>
+    <link href="{{ post_absolute_url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}"/>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
+    <id>{{ post_absolute_url }}</id>
+    <author>
+      <name>{{ post.author | default: site.social.name | xml_escape }}</name>
+    </author>
+  {%- for category in post.categories %}
+    <category term="{{ category | xml_escape }}"/>
+  {%- endfor %}
+  {%- if thumb %}
+    <media:thumbnail url="{{ thumb | absolute_url | xml_escape }}"/>
+  {%- endif %}
+    <summary>{{ summary | xml_escape }}</summary>
+    <content type="html" xml:base="{{ post_absolute_url }}">{{ full_content | xml_escape }}</content>
+  </entry>
+{% endfor %}
+</feed>
