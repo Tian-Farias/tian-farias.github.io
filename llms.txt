@@ -1,0 +1,31 @@
+---
+# Resumen del sitio para modelos de lenguaje (formato https://llmstxt.org). Se genera solo con los posts y páginas.
+layout: null
+permalink: /llms.txt
+---
+# {{ site.title }}
+
+> {{ site.description }}
+
+Blog y portafolio personal de Cristian “Tian” Farias. Es un proyecto personal e informativo con notas, guías y proyectos sobre agentes LLM, MCP, Spec-Driven Development, datos e IA aplicada, escritos desde la práctica. Las opiniones son personales. Los posts tienen licencia CC BY-SA 4.0.
+
+## Posts
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description }}
+{%- endfor %}
+
+## Páginas
+{% assign paginas = site.tabs | where_exp: "t", "t.description" %}
+{%- for t in paginas %}
+- [{{ t.title }}]({{ t.url | absolute_url }}): {{ t.description }}
+{%- endfor %}
+
+## Proyectos
+{% for p in site.data.projects %}
+- [{{ p.name }}]({{ p.url | absolute_url }}): {{ p.description }}
+{%- endfor %}
+
+## Optional
+
+- [Feed Atom]({{ '/feed.xml' | absolute_url }}): últimos posts
+- [Sitemap]({{ '/sitemap.xml' | absolute_url }}): todas las URL del sitio

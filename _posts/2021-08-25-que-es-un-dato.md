@@ -16,7 +16,7 @@ image:
 
 Estas son notas que recopilé hace un tiempo cuando estaba participando en un curso de introducción al análisis de datos. Estas fueron anotaciones rápidas que me ayudaron a entender y desarrollar una intuición respecto a los temas que maneja el mundo de los datos, el cual es muy entretenido.
 
-# ¿Qué es un dato?
+## ¿Qué es un dato?
 
 Según mi experiencia, es una descripción concreta sobre hechos, elementos, sucesos y entidades que permite estudiarlos, analizarlos o conocerlos.
 
@@ -24,7 +24,7 @@ Creo que es importante resaltar que un dato por sí mismo no representa informac
 
 ![Procesamiento Datos](https://upload.wikimedia.org/wikipedia/commons/e/e6/ProcesamientoDatos.svg)
 
-# ¿Cómo entender los datos?
+## ¿Cómo entender los datos?
 
 Podemos entender los datos a través de tres formas simples:
 
@@ -36,7 +36,7 @@ Podemos entender los datos a través de tres formas simples:
 
 Quiero insistir en que estas son notas rápidas y esto es un resumen, así que pueden existir infinitas formas de ver los datos; yo solo me limito a tres. Si encuentro más, voy haciendo la actualización.
 
-# Tipos de datos
+## Tipos de datos
 
 Básicamente y a grandes rasgos existen dos tipos de datos:
 

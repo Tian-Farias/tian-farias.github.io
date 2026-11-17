@@ -1,7 +1,7 @@
 ---
 title: "El vibe coding no deja rastro"
 author: Cristian
-description: "Por qué uso vibe coding para prototipar y Spec-Driven Development cuando el proyecto crece, contado desde un prototipo que tuve que rehacer completo varias veces."
+description: "Por qué uso vibe coding para prototipar y Spec-Driven Development cuando el proyecto crece, contado desde un prototipo que rehice varias veces."
 categories: [IA]
 tags: [Vibe Coding, SDD, Spec Kit, Claude Code, Agentes]
 toc: true

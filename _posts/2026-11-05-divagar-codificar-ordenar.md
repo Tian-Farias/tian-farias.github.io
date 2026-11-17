@@ -1,7 +1,7 @@
 ---
 title: "Divagar, codificar, ordenar: cómo trabajo con IA cuando programo"
 author: Cristian
-description: "Un video de Brais Moure le puso nombre a la forma en que trabajo con modelos de lenguaje. Esta es mi versión: vibe coding para aprender, especificaciones para formalizar y prompting donde todavía hace falta."
+description: "Mi forma de trabajar con modelos de lenguaje: vibe coding para aprender, especificaciones para formalizar y prompting donde todavía hace falta."
 categories: [IA]
 tags: [Vibe Coding, SDD, Spec Kit, Prompting, LLM, Agentes]
 toc: true

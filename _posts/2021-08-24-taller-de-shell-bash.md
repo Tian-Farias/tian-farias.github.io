@@ -20,7 +20,7 @@ Esta guía tiene por objetivo dar una introducción muy clara y concreta a los c
 
 Si quieres colaborar en este documento, no dudes en [ponerte en contacto conmigo](https://www.linkedin.com/in/cristianfarias) para que vayamos mejorando el contenido. Se agradece si envían correcciones, puestas al día o incluso párrafos enteros. Esto es muy amable de su parte y es la forma correcta de hacer evolucionar esta guía y el código abierto en general.
 
-# Plataformas de trabajo
+## Plataformas de trabajo
 
 [Bash](https://es.wikipedia.org/wiki/Bash) inicialmente fue desarrollado para Unix/Linux, sin embargo, se ha ido portando a muchas plataformas. Es por eso que quise independizarme del sistema operativo y centrarme en el shell en sí.
 
@@ -33,7 +33,7 @@ Esta guía te sirve si:
 - Tienes un Apple con macOS. Desde macOS Catalina (2019) el shell por defecto es zsh, pero bash sigue disponible ejecutando `bash`, y casi todo lo de esta guía funciona igual en zsh.
 - Tienes acceso a un servidor Unix/Linux remoto vía SSH.
 
-# Algunos datos útiles sobre la línea de comandos (CLI)
+## Algunos datos útiles sobre la línea de comandos (CLI)
 
 - En la CLI estás interactuando con tu servidor a través de comandos que vas introduciendo.
 - No existen interfaces gráficas o cursores gráficos... en teoría...
@@ -43,7 +43,7 @@ Esta guía te sirve si:
 - Mezclando comandos obtenemos un lenguaje de programación muy potente.
 - El directorio donde estás parado se llama "directorio de trabajo".
 
-## El símbolo de sistema
+### El símbolo de sistema
 
 Cuando trabajamos en la línea de comandos, al principio de cada línea vemos el siguiente símbolo:
 
@@ -62,7 +62,7 @@ En esta simple línea podemos identificar seis elementos:
 
 Los comandos que lancemos irán siempre después del signo `$`.
 
-## El directorio home
+### El directorio home
 
 Todos los usuarios de sistema cuentan con un directorio home, este es su ambiente de trabajo y donde residen las configuraciones de cada aplicación que usemos, ya sea de consola o gráfica.
 
@@ -75,7 +75,7 @@ Además, existe el usuario **root**, que es el superusuario del sistema, él es 
 **ATENCIÓN**: El usuario root se debe usar solo para configuraciones y no como el usuario de acceso permanente al sistema.  
 Quedan advertidos... ;)
 
-## El entorno de usuario
+### El entorno de usuario
 
 Dentro del entorno de usuario se pueden crear directorios y archivos y darles el orden que este estime conveniente; es el usuario el que tiene el control y puede modificarlo a voluntad.
 
@@ -98,7 +98,7 @@ Si quieres conocer todas las variables de sistema puedes usar el comando `env` o
 
 Archivos como `.bashrc` o `.profile` permiten personalizar el entorno, agregar variables y ejecutar algunas configuraciones de forma automática al inicio de sesión.
 
-## Páginas de manual
+### Páginas de manual
 
 Si quieres tener más información de los comandos, archivos o ambiente de sistema, UNIX pone a disposición un manual completo de la plataforma a través del comando `man`.
 
@@ -138,7 +138,7 @@ En algunos sistemas están disponibles también las siguientes secciones:
 | n | Tcl/Tk |
 | x | X Window System (entorno gráfico) |
 
-# Comandos básicos para trabajar con directorios
+## Comandos básicos para trabajar con directorios
 
 `pwd`  
 Imprime el directorio donde estás trabajando, o sea, donde estás "parado".
@@ -165,7 +165,7 @@ Esto permite devolverte al directorio de trabajo anterior.
 Si el directorio está vacío, lo elimina. Si no está vacío se debe usar `rm -r un_dir`, que elimina el directorio con todo su contenido.  
 **ATENCIÓN: No existe papelera de reciclaje, el directorio se elimina inmediatamente.**
 
-# Comandos básicos para trabajo con archivos
+## Comandos básicos para trabajo con archivos
 
 `touch prueba.txt`  
 Crea un archivo vacío llamado `prueba.txt`; si el archivo existe, solo se actualiza la información de hora del mismo.
@@ -188,7 +188,7 @@ Renombra el archivo `prueba.txt` a `nueva_prueba.txt`.
 Borra el archivo `prueba.txt`.  
 **ATENCIÓN: No existe papelera de reciclaje, el archivo se elimina inmediatamente.**
 
-# Algunos trucos
+## Algunos trucos
 
 1. `clear`: Limpia la terminal.
 2. Puedes usar las flechas arriba (↑) y abajo (↓) para encontrar los comandos utilizados anteriormente.
@@ -196,7 +196,7 @@ Borra el archivo `prueba.txt`.
 4. Se pueden autocompletar comandos, archivos, directorios, etc. con la tecla Tab (⇥).
 5. Con la combinación `Ctrl-R` puedes tipear un comando y se buscará en el historial el último ejecutado que coincida con lo tipeado.
 
-# Imprimiendo en pantalla
+## Imprimiendo en pantalla
 
 `echo "Hello, World"`  
 Imprime Hello, World en tu pantalla.
@@ -216,7 +216,7 @@ Imprime las últimas 10 líneas del archivo `datos.csv` en la pantalla.
 `tail -n 50 datos.csv`  
 Imprime las últimas 50 líneas del archivo `datos.csv` en la pantalla.
 
-# Contando cosas
+## Contando cosas
 
 `wc datos.csv`  
 Cuenta el número de líneas, palabras y bytes en el archivo `datos.csv` y los imprime en pantalla.
@@ -233,7 +233,7 @@ Cuenta el número de bytes en el archivo `datos.csv` y lo informa en pantalla. (
 `wc -m datos.csv`  
 Cuenta el número de caracteres en el archivo `datos.csv`. Se diferencia de `-c` cuando el archivo tiene tildes, eñes u otros caracteres que ocupan más de un byte.
 
-# Parámetros y opciones
+## Parámetros y opciones
 
 Los parámetros de los comandos pueden modificar el comportamiento original de estos.
 Casi todos los comandos tienen múltiples opciones.
@@ -267,7 +267,7 @@ En este caso modificamos el comportamiento con el parámetro `-w` para que solo 
 En este caso sabemos que `ls` lista todo el contenido de un directorio.
 Pero el parámetro `-l` cambia el formato de salida y muestra mayor información sobre los archivos y directorios.
 
-# Imprimiendo cosas a un archivo
+## Imprimiendo cosas a un archivo
 
 En algunos casos, y principalmente en proyectos más complejos, no necesitamos imprimir datos en pantalla, sino que necesitamos guardar los resultados en archivos para poder trabajarlos después.
 
@@ -290,7 +290,7 @@ Toma las primeras 10 líneas del archivo `datos.csv` y las envía a un archivo l
 Si el archivo no existe, lo crea.  
 Si el archivo existe, agrega el contenido al final del archivo manteniendo el contenido original.  
 
-# Filtrando datos
+## Filtrando datos
 
 Si tenemos un archivo `datos.csv` que es un conjunto de datos separados por `;` y queremos mostrar solo la primera columna del archivo, podemos ejecutar lo siguiente:
 
@@ -312,7 +312,7 @@ Al contrario del comando anterior, este comando retorna todas las líneas que **
 Este comando retornará todas las líneas que contienen el string dentro del archivo `datos.csv`.  
 En este caso, con el parámetro `-i`, **NO** diferencia entre mayúsculas y minúsculas.  
 
-# Valores únicos y ordenados
+## Valores únicos y ordenados
 
 `sort datos.csv`  
 Muestra en su salida el archivo ordenado alfabéticamente.
@@ -338,7 +338,7 @@ Muestra en su salida el contenido del archivo eliminando las líneas repetidas *
 `uniq -c datos.csv`  
 Igual que el anterior, pero además cuenta el número de ocurrencias de cada línea.
 
-# Pipes o tuberías
+## Pipes o tuberías
 
 En proyectos más complejos, existen ocasiones en que es necesario pasar la salida de un comando a la entrada de otros. Para esto se pueden utilizar archivos, pero con grandes volúmenes de datos esto puede ser muy poco conveniente.
 
@@ -364,7 +364,7 @@ Este comando ejecuta lo siguiente:
 2. Busca dentro de la salida del comando `cut` el string "algo".
 3. Cuenta la cantidad de líneas donde el string "algo" aparece.
 
-# Automatizar tareas
+## Automatizar tareas
 
 Se pueden automatizar tareas, scripts y comandos para que se ejecuten automáticamente cada día, hora o incluso cada minuto.
 
@@ -389,7 +389,7 @@ El símbolo `*` es un comodín que significa *todos*.
 
 La siguiente imagen corresponde al archivo de sistema `/etc/crontab`, que además incluye una columna con el usuario que ejecuta la tarea (`user-name`). Esa columna **solo** existe en `/etc/crontab`; en el crontab de cada usuario (el que se edita con `crontab -e`) no se escribe.
 
-![Crontab File](/assets/img/taller-de-shell-bash-crontab.png)
+![Comentarios del archivo /etc/crontab que explican las columnas: minuto, hora, día del mes, mes, día de la semana, usuario y comando](/assets/img/taller-de-shell-bash-crontab.png)
 
 Por ejemplo:  
 
@@ -399,7 +399,7 @@ Ejecutará el `script.sh` a las 00:15 horas, todos los días del mes, todos los 
 Una ayuda muy buena para programar tareas con cron es la página <https://crontab.guru/>.
 En ella pueden obtener muchas opciones de ejecución para luego copiar y pegar en su archivo crontab.
 
-# Scripting con bash
+## Scripting con bash
 
 Un script no es más que un conjunto de comandos útiles ejecutándose juntos y en orden para crear otro comando útil.
 
@@ -411,7 +411,7 @@ Para instalar mcedit debes instalar el paquete "**Midnight Commander**" (llamado
 
 **Midnight Commander** es una herramienta de exploración de archivos tipo *Norton Commander* que entrega muchas utilidades para la consola, incluyendo conexión de red, FTP, etc.
 
-![mcedit](/assets/img/taller-de-shell-bash-mcedit.png)
+![Editor mcedit en la terminal con un archivo de texto de dos líneas y las teclas de función en la barra inferior](/assets/img/taller-de-shell-bash-mcedit.png)
 
 Para crear un script paso a paso:
 
@@ -433,7 +433,7 @@ Para crear un script paso a paso:
 
 Debería quedar algo como esto:
 
-![mcedit](/assets/img/taller-de-shell-bash-script.png)
+![Script mi_script.sh abierto en mcedit, con el shebang y los comandos echo y wc](/assets/img/taller-de-shell-bash-script.png)
 
 La salida debe ser algo como esto:
 
@@ -448,7 +448,7 @@ Recuerda que `wc -c` cuenta bytes: si el archivo tiene tildes o eñes, usa `wc -
 
 Ya tenemos nuestro primer script.
 
-## Variables
+### Variables
 
 En [bash](https://es.wikipedia.org/wiki/Bash) podemos asignar valores a variables de forma simple ejecutando lo siguiente (sin espacios alrededor del `=`):
 
@@ -479,7 +479,7 @@ true
 `echo "$VALOR"`  
 0.75
 
-## Condicionales con IF
+### Condicionales con IF
 
 Como se dijo anteriormente, todos los comandos y propiedades de [bash](https://es.wikipedia.org/wiki/Bash) forman un lenguaje de programación rico y lleno de opciones. En este caso también cuenta con condicionales, las cuales cumplen el siguiente criterio:
 
@@ -499,7 +499,7 @@ Existe también la forma clásica `[ ... ]`, donde `[` es un alias del comando `
 
 Mucha información se puede encontrar en la página de manual de `test` a través del comando `man test`.
 
-## Loops
+### Loops
 
 [Bash](https://es.wikipedia.org/wiki/Bash) también cuenta con loops al igual que cualquier lenguaje, y estos pueden ser con `while`, si se requiere la evaluación de una condición, o con `for`, si se requiere iterar rápidamente.
 
@@ -556,7 +556,7 @@ for (( ; ; )); do
 done
 ```
 
-# Otros comandos útiles
+## Otros comandos útiles
 
 `echo 'hola mundo!'`  
 hola mundo!  

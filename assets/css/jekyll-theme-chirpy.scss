@@ -268,3 +268,12 @@ dialog.tabla-modal {
     display: none;
   }
 }
+
+/* Título de la barra lateral: "by Tian Farias" en una segunda línea más chica (ver _includes/sidebar.html). */
+#sidebar .site-title .site-title-by {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-top: 0.2rem;
+}

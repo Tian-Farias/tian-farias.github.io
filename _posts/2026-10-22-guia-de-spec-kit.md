@@ -1,7 +1,7 @@
 ---
 title: "Guía de Spec Kit"
 author: Cristian
-description: "Spec-Driven Development con GitHub Spec Kit y Claude Code, en modo estricto: cómo crear un Tetris, hacerlo evolucionar y corregir un bug usando solo los comandos de Spec Kit, incluido qué hacer cuando el agente te pregunta algo."
+description: "Spec-Driven Development con GitHub Spec Kit y Claude Code: crear un Tetris, hacerlo evolucionar y corregir un bug usando solo los comandos de Spec Kit."
 categories: [IA]
 tags: [Spec Kit, SDD, Claude Code, Agentes]
 toc: true
